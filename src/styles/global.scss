@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --background: #FFFFFF;
-    --text: #000000;
+    --background: #f4f4f5;
+    --brand: #222222;
+    --text: #a7a5a5;
+    --border: #eae6fd;
+    --white: #ffffff;
 }
 
 :focus {
@@ -14,8 +18,10 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: #3eb8dd;
     -webkit-font-smoothing: antialiased;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 body,
@@ -24,7 +30,6 @@ textarea,
 button {
     font-weight: 400;
     font-size: 1rem;
-    color: var(--text);
 }
 
 a {

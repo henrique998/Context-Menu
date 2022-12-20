@@ -1,0 +1,130 @@
+.container {
+    position: absolute;
+    visibility: hidden;
+    background-color: #fff;
+    width: 13.75rem;
+    border-radius: 6px;
+
+    padding: 0.5rem;
+}
+
+.content {
+    display: grid;
+    gap: 0.5rem;
+
+    ul {
+        display: grid;
+        gap: 0.325rem;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            cursor: default;
+            padding: 0.25rem 1rem;
+            border-radius: 4px;
+
+            span {
+                color: var(--brand);
+            }
+
+            span.foward {
+                color: var(--text);
+            }
+
+            span:nth-child(2) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.25rem;
+            }
+
+            &:not(:has(.foward)):hover {
+                background-color: var(--brand);
+
+                span {
+                    color: var(--white);
+                }
+
+                i {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    h4 {
+        padding-left: 1rem;
+
+        font-size: 0.875rem;
+        color: var(--brand);
+    }
+}
+
+.tools {
+    position: relative;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    ul {
+        padding: 0.5rem;
+        width: 13.75rem;
+        background-color: var(--white);
+        border-radius: 6px;
+        border: 1px solid var(--border);
+
+        position: absolute;
+        right: -220px;
+        top: 0;
+
+        display: none;
+
+        .tools-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            cursor: default;
+            padding: 0.25rem 1rem;
+            border-radius: 4px;
+
+            span {
+                color: var(--brand) !important;
+            }
+
+            i {
+                color: var(--brand) !important;
+            }
+
+            &:hover {
+                background-color: var(--brand);
+
+                span {
+                    color: var(--white) !important;
+                }
+
+                i {
+                    color: var(--white) !important;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        ul {
+            display: block;
+        }
+    }
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--border);
+}

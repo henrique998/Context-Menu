@@ -6,13 +6,116 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script type="module" defer src="/src/main.ts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
-  <title>Vite + TS</title>
+  <script type="module" defer src="/src/main.ts"></script>
+  <script defer src="https://unpkg.com/phosphor-icons"></script>
+
+  <title>Context Menu</title>
 </head>
 
 <body>
-  <main></main>
+  <div data-element="menu-container" class="container">
+    <div class="content">
+      <ul>
+        <li class="item">
+          <span>Back</span>
+
+          <span>
+            <i class="ph-command"></i>
+            +
+            [
+          </span>
+        </li>
+
+        <li class="item">
+          <span class="foward">Foward</span>
+
+          <span class="foward">
+            <i class="ph-command"></i>
+            +
+            ]
+          </span>
+        </li>
+
+        <li class="item">
+          <span>Reload</span>
+
+          <span>
+            <i class="ph-command"></i>
+            +
+            R
+          </span>
+        </li>
+
+        <li class="item tools">
+          <div>
+            <span>More Tools</span>
+
+            <i class="ph-caret-right"></i>
+          </div>
+
+          <ul>
+            <li class="tools-item">
+              <span>Save page as</span>
+
+              <span>
+                <i class="ph-command"></i>
+                +
+                S
+              </span>
+            </li>
+
+            <li class="tools-item">
+              <span>Create Shortcut...</span>
+            </li>
+
+            <li class="tools-item">
+              <span>Name Window...</span>
+            </li>
+
+            <li class="tools-item">
+              <span>Developer tools</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <ul>
+        <li class="item">
+          <span>Show Boomarks</span>
+
+          <span>
+            <i class="ph-command"></i>
+            +
+            B
+          </span>
+        </li>
+
+        <li class="item">
+          <span>Show Full URLs</span>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h4>People</h4>
+
+      <ul>
+        <li class="item">
+          <span>Jhon doe</span>
+        </li>
+
+        <li class="item">
+          <span>Pedro duarte</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
